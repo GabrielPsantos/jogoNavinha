@@ -1,0 +1,94 @@
+<div ng-controller="red">
+	<div class="panel panel-danger">
+		<div class="panel-heading">Joguinho Maroto - pts: {{pontos}}</div>
+		<div class="panel-body">
+			<div id="areaJogo">
+				<div class="placar">
+					Placar : <label class="pts"></label> 
+				</div>
+				
+				<div id="saudeN"><label class="saude"></label></div>
+				<div id="healthM"><label class="lHealthM"></label></div>
+				<div id="inimigo"></div>
+				<div id="nave" style="top: {{nTop}}px; left:{{nLeft}}px"></div>
+				<div id="missil"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+#areaJogo{
+	height: 90vh;
+	background-image : url('app/img/fundo.png');
+	background-size: contain;
+}
+#nave{
+	width:15vh;
+	height: 15vh;
+	background-image: url('app/img/nave.png');
+	position: relative;
+	background-size: contain;
+	top:10px;
+	left: 10px;
+	background-repeat: no-repeat;
+}
+.missil{
+	background-image: url('app/img/missil.png');
+	width:3vh;
+	height: 9vh;
+	position: relative;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#inimigo{
+	background-image: url('app/img/inimigo.png');
+	height: 20vh;
+	width: 20vh;
+	position: relative;
+	background-size: contain;
+}
+.placar{
+	position: relative;
+	color: white;
+	top: 20px;
+	left: 20px;
+	float: left;
+}
+
+
+
+#saudeN{
+	position: relative;
+	width: 20%;
+	top: 10px;
+	left: 30px;
+	border:5px solid white;
+	height: 20px;
+	float: left;
+}
+
+.saude{
+	width: 100%;
+	background-color: blue;
+	height: 10px;
+	position: relative;
+}
+
+#healthM{
+	position: relative;
+	width: 20%;
+	top: 40px;
+	left: 40px;
+	border:5px solid white;
+	height: 20px;
+	float: left;
+}
+.lHealthM{
+	width: 100%;
+	background-color: red;
+	height: 10px;
+	position: relative;
+}
+
+</style>

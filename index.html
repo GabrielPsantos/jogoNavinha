@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<body ng-app="myApp" ng-controller="principal">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/">Home</a></li>
+        <li><a href="#red">Jogo</a></li>
+        <li><a href="#green">Formulario</a></li>
+        <li><a href="#blue">Créditos</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/"><span class="glyphicon glyphicon-user"></span> {{$root.nomeUsuario}}</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div ng-view class="container"></div>
+
+
+  <script type="text/javascript" src="/app_angular/app/app.js"></script>
+  <script type="text/javascript" src="/app_angular/app/controller/controller-blue.js"></script>
+  <script type="text/javascript" src="/app_angular/app/controller/controller-red.js"></script>
+  <script type="text/javascript" src="/app_angular/app/controller/controller-green.js"></script>
+  <script type="text/javascript" src="/app_angular/app/controller/controllerPrincipal.js"></script>
+  <script type="text/javascript" src="/app_angular/app/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/app_angular/app/js/jquery.spritely.js"></script>
+</body>
+</html>
+
